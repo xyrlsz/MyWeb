@@ -1,5 +1,6 @@
 {
   "name": "MyWeb",
+  "base": "/MyWeb/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
