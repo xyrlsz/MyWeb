@@ -1,4 +1,5 @@
 # XYR的BOOK
-这是第一个网站   
-~~意义重大~~
+
+
+这个是XYR的NOTEBOOK
 

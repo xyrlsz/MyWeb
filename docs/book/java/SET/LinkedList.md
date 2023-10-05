@@ -41,7 +41,7 @@ LinkedList 类位于 java.util 包中，使用前需要引入它，语法格式�
 // 引入 LinkedList 类
 import java.util.LinkedList; 
 
-LinkedList<E> list = new LinkedList<E>();   // 普通创建方法
+LinkedList <E> list = new LinkedList <E>();   // 普通创建方法
 ```
 
 或者：
@@ -259,46 +259,42 @@ public class RunoobTest {
 }
 ~~~
 
+## 常用方法
 
-<h3>常用方法</h3>
-<table class="reference">
-<tbody><tr><th>方法</th><th>描述</th></tr><tr><td>
-public boolean add(E e)</td><td>链表末尾添加元素，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
-public void add(int index, E element)</td><td>向指定位置插入元素。</td></tr><tr><td>
-public boolean addAll(Collection<!--? extends E--> c)</td><td>将一个集合的所有元素添加到链表后面，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
-public boolean addAll(int index, Collection<!--? extends E--> c)</td><td>将一个集合的所有元素添加到链表的指定位置后面，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
-public void addFirst(E e)</td><td>元素添加到头部。</td></tr><tr><td>
-public void addLast(E e)</td><td>元素添加到尾部。</td></tr><tr><td>
-public boolean offer(E e)</td><td>向链表末尾添加元素，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
-public boolean offerFirst(E e)</td><td>头部插入元素，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
-public boolean offerLast(E e)</td><td>尾部插入元素，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
+| 方法                                              | 描述                                                         |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| `public boolean add(E e)`                         | 链表末尾添加元素，返回是否成功，成功为 true，失败为 false。   |
+| `public void add(int index, E element)`           | 向指定位置插入元素。                                         |
+| `public boolean addAll(Collection<? extends E> c)` | 将一个集合的所有元素添加到链表后面，返回是否成功，成功为 true，失败为 false。 |
+| `public boolean addAll(int index, Collection<? extends E> c)` | 将一个集合的所有元素添加到链表的指定位置后面，返回是否成功，成功为 true，失败为 false。 |
+| `public void addFirst(E e)`                       | 元素添加到头部。                                             |
+| `public void addLast(E e)`                        | 元素添加到尾部。                                             |
+| `public boolean offer(E e)`                      | 向链表末尾添加元素，返回是否成功，成功为 true，失败为 false。 |
+| `public boolean offerFirst(E e)`                 | 头部插入元素，返回是否成功，成功为 true，失败为 false。       |
+| `public boolean offerLast(E e)`                  | 尾部插入元素，返回是否成功，成功为 true，失败为 false。       |
+| `public void clear()`                            | 清空链表。                                                   |
+| `public E removeFirst()`                         | 删除并返回第一个元素。                                       |
+| `public E removeLast()`                          | 删除并返回最后一个元素。                                     |
+| `public boolean remove(Object o)`                | 删除某一元素，返回是否成功，成功为 true，失败为 false。       |
+| `public E remove(int index)`                     | 删除指定位置的元素。                                         |
+| `public E poll()`                               | 删除并返回第一个元素。                                       |
+| `public E remove()`                             | 删除并返回第一个元素。                                       |
+| `public boolean contains(Object o)`              | 判断是否含有某一元素。                                       |
+| `public E get(int index)`                        | 返回指定位置的元素。                                         |
+| `public E getFirst()`                            | 返回第一个元素。                                             |
+| `public E getLast()`                             | 返回最后一个元素。                                           |
+| `public int indexOf(Object o)`                   | 查找指定元素从前往后第一次出现的索引。                         |
+| `public int lastIndexOf(Object o)`               | 查找指定元素最后一次出现的索引。                             |
+| `public E peek()`                                | 返回第一个元素。                                             |
+| `public E element()`                             | 返回第一个元素。                                             |
+| `public E peekFirst()`                           | 返回头部元素。                                               |
+| `public E peekLast()`                            | 返回尾部元素。                                               |
+| `public E set(int index, E element)`             | 设置指定位置的元素。                                         |
+| `public Object clone()`                          | 克隆该列表。                                                 |
+| `public Iterator<E> descendingIterator()`        | 返回倒序迭代器。                                             |
+| `public int size()`                              | 返回链表元素个数。                                           |
+| `public ListIterator<E> listIterator(int index)` | 返回从指定位置开始到末尾的迭代器。                           |
+| `public Object[] toArray()`                      | 返回一个由链表元素组成的数组。                               |
+| `public <T> T[] toArray(T[] a)`                  | 返回一个由链表元素转换类型而成的数组。                       |
 
-public void clear()</td><td>清空链表。</td></tr><tr><td>
-public E removeFirst()</td><td>删除并返回第一个元素。</td></tr><tr><td>
-public E removeLast()</td><td>删除并返回最后一个元素。</td></tr><tr><td>
-public boolean remove(Object o)</td><td>删除某一元素，返回是否成功，成功为 true，失败为 false。</td></tr><tr><td>
-public E remove(int index)</td><td>删除指定位置的元素。</td></tr><tr><td>
-public E poll()</td><td>删除并返回第一个元素。</td></tr><tr><td>
-public E remove()</td><td>删除并返回第一个元素。</td></tr><tr><td>
-
-public boolean contains(Object o)</td><td>判断是否含有某一元素。</td></tr><tr><td>
-public E get(int index)</td><td>返回指定位置的元素。</td></tr><tr><td>
-public E getFirst()</td><td>返回第一个元素。</td></tr><tr><td>
-public E getLast()</td><td>返回最后一个元素。</td></tr><tr><td>
-public int indexOf(Object o)</td><td>查找指定元素从前往后第一次出现的索引。</td></tr><tr><td>
-public int lastIndexOf(Object o)</td><td>查找指定元素最后一次出现的索引。</td></tr><tr><td>
-public E peek()</td><td>返回第一个元素。</td></tr><tr><td>
-public E element()</td><td>返回第一个元素。</td></tr><tr><td>
-public E peekFirst()</td><td>返回头部元素。</td></tr><tr><td>
-public E peekLast()</td><td>返回尾部元素。</td></tr><tr><td>
-public E set(int index, E element)</td><td>设置指定位置的元素。</td></tr><tr><td>
-public Object clone()</td><td>克隆该列表。</td></tr><tr><td>
-public Iterator<e> descendingIterator()</e></td><td>返回倒序迭代器。</td></tr><tr><td>
-public int size()</td><td>返回链表元素个数。</td></tr><tr><td>
-public ListIterator<e> listIterator(int index)</e></td><td>返回从指定位置开始到末尾的迭代器。</td></tr><tr><td>
-public Object[] toArray()</td><td>返回一个由链表元素组成的数组。</td></tr><tr><td>
-public <t> T[] toArray(T[] a)</t></td><td>返回一个由链表元素转换类型而成的数组。</td></tr></tbody></table>
-<p>
-更多 API 方法可以查看：<a href="https://www.runoob.com/manual/jdk11api/java.base/java/util/LinkedList.html" rel="noopener noreferrer" target="_blank">https://www.runoob.com/manual/jdk11api/java.base/java/util/LinkedList.html</a></p>
-<p>
-</p>
+更多 API 方法可以查看：[https://www.runoob.com/manual/jdk11api/java.base/java/util/LinkedList.html](https://www.runoob.com/manual/jdk11api/java.base/java/util/LinkedList.html)
