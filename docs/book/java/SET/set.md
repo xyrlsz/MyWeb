@@ -71,8 +71,7 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 | 8    | **LinkedHashSet**<br> 具有可预知迭代顺序的Set接口的哈希表和链接列表实现。                                                                                                 |
 | 9    | **TreeSet**<br> 该类实现了Set接口，可以实现排序等功能。                                                                                                                    |
 | 10   | **AbstractMap**<br> 实现了大部分的Map接口。                                                                                                                               |
-| 11   | [**HashMap**](HashMap.md)<br> HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。                                                                                                             |
-|      | 该类实现了Map接口，根据键的HashCode值存储数据，具有很快的访问速度，最多允许一条记录的键为null，不支持线程同步。                                                         |
+| 11   | [**HashMap**](HashMap.md)<br> HashMap 是一个散列表，它存储的内容是键值对(key-value)映射。                                                                                   <br>该类实现了Map接口，根据键的HashCode值存储数据，具有很快的访问速度，最多允许一条记录的键为null，不支持线程同步。                                                         |
 | 12   | **TreeMap**<br> 继承了AbstractMap，并且使用一颗树。                                                                                                                         |
 | 13   | **WeakHashMap**<br> 继承AbstractMap类，使用弱密钥的哈希表。                                                                                                                |
 | 14   | **LinkedHashMap**<br> 继承于HashMap，使用元素的自然顺序对元素进行排序。                                                                                                     |
