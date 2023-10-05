@@ -64,11 +64,7 @@ Java提供了一套实现了Collection接口的标准集合类。其中一些是
 | 1    | **AbstractCollection**<br> 实现了大部分的集合接口。                                                                                                                         |
 | 2    | **AbstractList**<br> 继承于AbstractCollection 并且实现了大部分List接口。                                                                                                    |
 | 3    | **AbstractSequentialList**<br> 继承于 AbstractList ，提供了对数据元素的链式访问而不是随机访问。                                                                              |
-| 4    | [**LinkedList**](LinkedList.md)<br> 该类实现了List接口，允许有null（空）元素。主要用于创建链表数据结构，该类没有同步方法，如果多个线程同时访问一个List，则必须自己实现访问同步，解决方法就是在创建List时候构造一个同步的List。例如：                                                                                           |
-|      | ```java                                                                                                                                                    |
-|      | List list = Collections.synchronizedList(new LinkedList(...));                                                                                                       |
-|      | ```                                                                                                                                                                      |
-|      | LinkedList 查找效率低。                                                                                                                                                 |
+| 4    | [**LinkedList**](LinkedList.md)<br> 该类实现了List接口，允许有null（空）元素。主要用于创建链表数据结构，该类没有同步方法，如果多个线程同时访问一个List，则必须自己实现访问同步，解决方法就是在创建List时候构造一个同步的List。例如：                          <br>```List list = Collections.synchronizedList(new LinkedList(...))```  <br> LinkedList 查找效率低。                                                                                      |
 | 5    | [**ArrayList**](ArrayList.md)<br> 该类也是实现了List的接口，实现了可变大小的数组，随机访问和遍历元素时，提供更好的性能。该类也是非同步的，在多线程的情况下不要使用。ArrayList 增长当前长度的50%，插入删除效率低。                      |
 | 6    | **AbstractSet**<br> 继承于AbstractCollection 并且实现了大部分Set接口。                                                                                                      |
 | 7    | [**HashSet**](HashSet.md)<br> 该类实现了Set接口，不允许出现重复元素，不保证集合中元素的顺序，允许包含值为null的元素，但最多只能一个。                                                    |
